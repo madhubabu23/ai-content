@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Draftroom | AI Content Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#"><span class="brand-mark">d<span>.</span></span><span>draftroom</span></a>
+      <div class="workspace-switcher"><span class="workspace-avatar">A</span><span><small>Workspace</small>Atlas Studio</span><span class="chevron">⌄</span></div>
+      <nav class="main-nav" aria-label="Main navigation">
+        <p class="nav-label">Create</p>
+        <a class="nav-item active" href="#generator"><span class="nav-icon">✦</span>Content generator</a>
+        <a class="nav-item" href="#library"><span class="nav-icon">▤</span>Content library<span class="nav-count">24</span></a>
+        <a class="nav-item" href="#references"><span class="nav-icon">⌁</span>Reference files</a>
+        <p class="nav-label second">Manage</p>
+        <a class="nav-item" href="#calendar"><span class="nav-icon">□</span>Content calendar</a>
+        <a class="nav-item" href="#brand"><span class="nav-icon">◌</span>Brand voice</a>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="usage-card"><div class="usage-row"><span>Monthly usage</span><strong>68%</strong></div><div class="usage-track"><span></span></div><small>68 of 100 generations used</small></div>
+        <a class="nav-item" href="#settings"><span class="nav-icon">⚙</span>Settings</a>
+        <div class="user-row"><span class="user-avatar">SK</span><span><strong>Swapna K.</strong><small>Admin</small></span><span class="more">•••</span></div>
+      </div>
+    </aside>
+
+    <main class="main-content" id="generator">
+      <header class="topbar"><div class="breadcrumb"><span>Workspace</span><b>/</b><strong>Content generator</strong></div><div class="top-actions"><button class="icon-button" title="Notifications">♢<i></i></button><button class="help-button">? <span>Help center</span></button></div></header>
+      <section class="page-intro"><div><p class="eyebrow">AI CONTENT STUDIO</p><h1>Make your brand <em>unmissable.</em></h1><p class="intro-copy">Build a thoughtful social calendar in minutes. Tell us about your brand and we’ll take it from there.</p></div><div class="intro-decoration"><span>✦</span><span>✦</span><span>✦</span></div></section>
+
+      <section class="generator-layout">
+        <div class="setup-panel panel">
+          <div class="panel-heading"><div><span class="step">01</span><h2>Set your direction</h2></div><span class="required">All fields required</span></div>
+          <div class="field-group"><label>What industry are you in? <span>*</span></label><div class="industry-grid" id="industry-options">
+            <button class="industry-option selected" data-industry="real-estate"><span class="industry-symbol">⌂</span><span><strong>Real Estate</strong><small>Spaces &amp; places</small></span><i>✓</i></button>
+            <button class="industry-option" data-industry="jewellery"><span class="industry-symbol">◇</span><span><strong>Jewellery</strong><small>Craft &amp; luxury</small></span><i>✓</i></button>
+            <button class="industry-option" data-industry="perfume"><span class="industry-symbol">♧</span><span><strong>Product · Perfume</strong><small>Scent &amp; mood</small></span><i>✓</i></button>
+            <button class="industry-option" data-industry="food"><span class="industry-symbol">◒</span><span><strong>FMCG · Food</strong><small>Taste &amp; togetherness</small></span><i>✓</i></button>
+          </div></div>
+          <div class="field-group"><label>How much content do you need? <span>*</span></label><div class="duration-options" id="duration-options">
+            <button class="duration-option selected" data-duration="week" data-posts="3"><strong>1 week</strong><span>3 posts</span></button><button class="duration-option" data-duration="fortnight" data-posts="6"><strong>2 weeks</strong><span>6 posts</span></button><button class="duration-option" data-duration="month" data-posts="12"><strong>1 month</strong><span>12 posts</span></button>
+          </div></div>
+          <div class="field-group references-field"><div class="label-row"><label>Reference material <small>Optional</small></label><span class="file-types">PDF · DOCX · PPTX · XLSX · TXT · JPG · PNG</span></div><label class="upload-zone" for="file-upload"><span class="upload-icon">↥</span><span><strong>Drop files here or <u>browse</u></strong><small>Use your website, product deck, or brand notes as context.</small></span><input id="file-upload" type="file" multiple accept=".pdf,.doc,.docx,.ppt,.pptx,.xls,.xlsx,.txt,.jpg,.jpeg,.png"></label><div class="file-list" id="file-list"></div></div>
+          <div class="tone-note"><span>✧</span><p>Your plan will be tailored for <strong id="tone-industry">real estate</strong> with the right vocabulary, audience, and content strategy.</p></div>
+          <button class="generate-button" id="generate-button"><span>Generate content plan</span><span class="button-arrow">↗</span></button>
+        </div>
+
+        <aside class="insight-panel"><div class="insight-orb">✦</div><p class="eyebrow">THE DRAFTROOM METHOD</p><h2>Less noise.<br><em>More resonance.</em></h2><p>Every plan balances what your audience needs to know with what they want to feel.</p><div class="insight-list"><div><span>01</span><p><strong>Educate</strong><br>Build a useful point of view.</p></div><div><span>02</span><p><strong>Connect</strong><br>Give your brand a human pulse.</p></div><div><span>03</span><p><strong>Convert</strong><br>Make the next step feel natural.</p></div></div><div class="spark-line">✧ &nbsp; Strategy-led, always</div></aside>
+      </section>
+
+      <section class="results-section" id="results"><div class="results-header"><div><p class="eyebrow">YOUR CONTENT PLAN</p><h2 id="results-title">Your first drafts are waiting.</h2></div><div class="results-actions"><button class="secondary-button" id="copy-button" disabled>▣ Copy all</button><button class="secondary-button" id="export-button" disabled>↓ Export</button></div></div><div class="empty-results" id="empty-results"><span>✦</span><h3>A considered plan starts here.</h3><p>Choose your direction above and we’ll shape the ideas, captions, and visuals.</p></div><div class="post-list" id="post-list"></div></section>
+      <footer>Draftroom AI <span>·</span> Built for brands with something to say.</footer>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
